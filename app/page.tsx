@@ -1,14 +1,6 @@
 
 "use client"
 
-import { Metadata } from "next"
-import Layout from "./layout"
-
-export const metadata: Metadata = {
-  title: "Dashboard",
-  description: "Dashboard and analytics for your business",
-}
-
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
