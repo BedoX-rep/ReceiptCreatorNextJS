@@ -1,3 +1,4 @@
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -15,7 +16,7 @@ const nextConfig = {
       fs: false,
       net: false,
       tls: false,
-      crypto: require.resolve("crypto-browserify"),
+      crypto: false,
     };
     return config;
   },
