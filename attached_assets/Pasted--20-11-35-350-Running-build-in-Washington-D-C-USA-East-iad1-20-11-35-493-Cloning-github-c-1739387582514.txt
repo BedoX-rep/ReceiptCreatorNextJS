@@ -1,0 +1,141 @@
+[20:11:35.350] Running build in Washington, D.C., USA (East) – iad1
+[20:11:35.493] Cloning github.com/BedoX-rep/ReceiptCreatorNextJS (Branch: main, Commit: 078685a)
+[20:11:35.834] Cloning completed: 340.000ms
+[20:11:36.440] Previous build cache not available
+[20:11:36.676] Running "vercel build"
+[20:11:37.066] Vercel CLI 41.1.0
+[20:11:37.540] Running "install" command: `bun install`...
+[20:11:37.579] bun install v1.2.2 (c1708ea6)
+[20:11:37.598] Resolving dependencies
+[20:11:40.957] Resolved, downloaded and extracted [1094]
+[20:11:40.958] warn: incorrect peer dependency "date-fns@4.1.0"
+[20:11:41.125] Saved lockfile
+[20:11:41.126] 
+[20:11:41.126] + @types/node@22.13.1
+[20:11:41.126] + @types/react@18.3.18 (v19.0.8 available)
+[20:11:41.126] + @types/react-dom@18.3.5 (v19.0.3 available)
+[20:11:41.126] + postcss@8.5.2
+[20:11:41.127] + tailwindcss@3.4.17 (v4.0.6 available)
+[20:11:41.127] + typescript@5.7.3
+[20:11:41.127] + @hookform/resolvers@3.10.0 (v4.0.0 available)
+[20:11:41.127] + @radix-ui/react-accordion@1.2.3
+[20:11:41.127] + @radix-ui/react-alert-dialog@1.1.6
+[20:11:41.127] + @radix-ui/react-aspect-ratio@1.1.2
+[20:11:41.127] + @radix-ui/react-avatar@1.1.3
+[20:11:41.127] + @radix-ui/react-checkbox@1.1.4
+[20:11:41.127] + @radix-ui/react-collapsible@1.1.3
+[20:11:41.127] + @radix-ui/react-context-menu@2.2.6
+[20:11:41.127] + @radix-ui/react-dialog@1.1.6
+[20:11:41.127] + @radix-ui/react-dropdown-menu@2.1.6
+[20:11:41.127] + @radix-ui/react-hover-card@1.1.6
+[20:11:41.128] + @radix-ui/react-label@2.1.2
+[20:11:41.128] + @radix-ui/react-menubar@1.1.6
+[20:11:41.128] + @radix-ui/react-navigation-menu@1.2.5
+[20:11:41.128] + @radix-ui/react-popover@1.1.6
+[20:11:41.128] + @radix-ui/react-progress@1.1.2
+[20:11:41.128] + @radix-ui/react-radio-group@1.2.3
+[20:11:41.128] + @radix-ui/react-scroll-area@1.2.3
+[20:11:41.128] + @radix-ui/react-select@2.1.6
+[20:11:41.128] + @radix-ui/react-separator@1.1.2
+[20:11:41.128] + @radix-ui/react-slider@1.2.3
+[20:11:41.128] + @radix-ui/react-slot@1.1.2
+[20:11:41.129] + @radix-ui/react-switch@1.1.3
+[20:11:41.129] + @radix-ui/react-tabs@1.1.3
+[20:11:41.129] + @radix-ui/react-toast@1.2.6
+[20:11:41.129] + @radix-ui/react-toggle@1.1.2
+[20:11:41.129] + @radix-ui/react-toggle-group@1.1.2
+[20:11:41.129] + @radix-ui/react-tooltip@1.1.8
+[20:11:41.129] + @supabase/supabase-js@2.48.1
+[20:11:41.130] + autoprefixer@10.4.20
+[20:11:41.130] + class-variance-authority@0.7.1
+[20:11:41.130] + clsx@2.1.1
+[20:11:41.130] + cmdk@1.0.4
+[20:11:41.130] + date-fns@4.1.0
+[20:11:41.130] + embla-carousel-react@8.5.1 (v8.5.2 available)
+[20:11:41.130] + input-otp@1.4.1 (v1.4.2 available)
+[20:11:41.130] + lucide-react@0.454.0 (v0.475.0 available)
+[20:11:41.130] + next@14.2.16 (v15.1.7 available)
+[20:11:41.130] + next-themes@0.4.4
+[20:11:41.130] + react@18.3.1 (v19.0.0 available)
+[20:11:41.131] + react-day-picker@8.10.1 (v9.5.1 available)
+[20:11:41.131] + react-dom@18.3.1 (v19.0.0 available)
+[20:11:41.131] + react-hook-form@7.54.2
+[20:11:41.131] + react-resizable-panels@2.1.7
+[20:11:41.131] + recharts@2.15.0 (v2.15.1 available)
+[20:11:41.131] + sonner@1.7.4
+[20:11:41.131] + tailwind-merge@2.6.0 (v3.0.1 available)
+[20:11:41.131] + tailwindcss-animate@1.0.7
+[20:11:41.132] + vaul@0.9.9 (v1.1.2 available)
+[20:11:41.132] + zod@3.24.2
+[20:11:41.132] 
+[20:11:41.132] 274 packages installed [3.57s]
+[20:11:41.155] Detected Next.js version: 14.2.16
+[20:11:41.155] Running "bun run build"
+[20:11:41.440] $ next build
+[20:11:42.276] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[20:11:42.277] This information is used to shape Next.js' roadmap and prioritize features.
+[20:11:42.277] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[20:11:42.277] https://nextjs.org/telemetry
+[20:11:42.277] 
+[20:11:42.334]   ▲ Next.js 14.2.16
+[20:11:42.335] 
+[20:11:42.402]    Creating an optimized production build ...
+[20:11:49.508] <w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|/vercel/path0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/vercel/path0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/vercel/path0/app/globals.css': No serializer registered for PostCSSSyntaxError
+[20:11:49.509] <w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+[20:11:49.593] Failed to compile.
+[20:11:49.594] 
+[20:11:49.594] ./app/globals.css:1:1
+[20:11:49.594] Syntax error: /vercel/path0/app/globals.css The `border-border` class does not exist. If `border-border` is a custom class, make sure it is defined within a `@layer` directive.
+[20:11:49.594] 
+[20:11:49.594] [1m[31m>[39m[22m[90m 1 | [39m[36m@tailwind[39m base[33m;[39m
+[20:11:49.594]  [90m   | [39m[1m[31m^[39m[22m
+[20:11:49.594]  [90m 2 | [39m[36m@tailwind[39m components[33m;[39m
+[20:11:49.594]  [90m 3 | [39m[36m@tailwind[39m utilities[33m;[39m
+[20:11:49.595] 
+[20:11:49.595] ./app/globals.css
+[20:11:49.595] Syntax error: /vercel/path0/app/globals.css The `border-border` class does not exist. If `border-border` is a custom class, make sure it is defined within a `@layer` directive. (1:1)
+[20:11:49.595] 
+[20:11:49.595] [1m[31m>[39m[22m[90m 1 | [39m[36m@tailwind[39m base[33m;[39m
+[20:11:49.595]  [90m   | [39m[1m[31m^[39m[22m
+[20:11:49.595]  [90m 2 | [39m[36m@tailwind[39m components[33m;[39m
+[20:11:49.595]  [90m 3 | [39m[36m@tailwind[39m utilities[33m;[39m
+[20:11:49.595] 
+[20:11:49.595]     at tryRunOrWebpackError (/vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:28:312989)
+[20:11:49.595]     at __webpack_require_module__ (/vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:28:131165)
+[20:11:49.595]     at __nested_webpack_require_153728__ (/vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:28:130607)
+[20:11:49.595]     at /vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:28:131454
+[20:11:49.596]     at symbolIterator (/vercel/path0/node_modules/next/dist/compiled/neo-async/async.js:1:14444)
+[20:11:49.596]     at done (/vercel/path0/node_modules/next/dist/compiled/neo-async/async.js:1:14824)
+[20:11:49.596]     at Hook.eval [as callAsync] (eval at create (/vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:13:28858), <anonymous>:15:1)
+[20:11:49.596]     at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:13:26012)
+[20:11:49.596]     at /vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:28:130328
+[20:11:49.596]     at symbolIterator (/vercel/path0/node_modules/next/dist/compiled/neo-async/async.js:1:14402)
+[20:11:49.596] -- inner error --
+[20:11:49.596] Syntax error: /vercel/path0/app/globals.css The `border-border` class does not exist. If `border-border` is a custom class, make sure it is defined within a `@layer` directive. (1:1)
+[20:11:49.596] 
+[20:11:49.596] [1m[31m>[39m[22m[90m 1 | [39m[36m@tailwind[39m base[33m;[39m
+[20:11:49.596]  [90m   | [39m[1m[31m^[39m[22m
+[20:11:49.596]  [90m 2 | [39m[36m@tailwind[39m components[33m;[39m
+[20:11:49.596]  [90m 3 | [39m[36m@tailwind[39m utilities[33m;[39m
+[20:11:49.597] 
+[20:11:49.597]     at Object.<anonymous> (/vercel/path0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/vercel/path0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/vercel/path0/app/globals.css:1:7)
+[20:11:49.597]     at /vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:28:922493
+[20:11:49.597]     at Hook.eval [as call] (eval at create (/vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:13:28636), <anonymous>:7:1)
+[20:11:49.597]     at Hook.CALL_DELEGATE [as _call] (/vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:13:25906)
+[20:11:49.597]     at /vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:28:131198
+[20:11:49.597]     at tryRunOrWebpackError (/vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:28:312943)
+[20:11:49.597]     at __webpack_require_module__ (/vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:28:131165)
+[20:11:49.597]     at __nested_webpack_require_153728__ (/vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:28:130607)
+[20:11:49.597]     at /vercel/path0/node_modules/next/dist/compiled/webpack/bundle5.js:28:131454
+[20:11:49.597]     at symbolIterator (/vercel/path0/node_modules/next/dist/compiled/neo-async/async.js:1:14444)
+[20:11:49.597] 
+[20:11:49.598] Generated code for /vercel/path0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/vercel/path0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/vercel/path0/app/globals.css
+[20:11:49.598] 
+[20:11:49.598] Import trace for requested module:
+[20:11:49.598] ./app/globals.css
+[20:11:49.598] 
+[20:11:49.598] 
+[20:11:49.599] > Build failed because of webpack errors
+[20:11:49.626] error: script "build" exited with code 1
+[20:11:49.633] Error: Command "bun run build" exited with 1
+[20:11:49.923] 
