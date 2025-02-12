@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
 import { supabase } from "@/lib/supabase"
 
 export default function ProductList() {
@@ -10,6 +10,28 @@ export default function ProductList() {
 
   useEffect(() => {
     fetchProducts()
+
+    const channel = supabase
+      .channel('products_channel')
+      .on('postgres_changes', 
+        { event: '*', schema: 'public', table: 'products' },
+        (payload) => {
+          if (payload.eventType === 'INSERT') {
+            setProducts(prev => [...prev, payload.new])
+          } else if (payload.eventType === 'DELETE') {
+            setProducts(prev => prev.filter(product => product.id !== payload.old.id))
+          } else if (payload.eventType === 'UPDATE') {
+            setProducts(prev => prev.map(product => 
+              product.id === payload.new.id ? payload.new : product
+            ))
+          }
+        }
+      )
+      .subscribe()
+
+    return () => {
+      supabase.removeChannel(channel)
+    }
   }, [])
 
   async function fetchProducts() {
@@ -35,7 +57,7 @@ export default function ProductList() {
       console.error("Error deleting product:", error)
       setError("Failed to delete product. Please try again.")
     } else {
-      await fetchProducts()
+      // fetchProducts()  No need to refetch, real-time updates handle this.
     }
     setLoading(false)
   }
@@ -74,4 +96,3 @@ export default function ProductList() {
     </div>
   )
 }
-

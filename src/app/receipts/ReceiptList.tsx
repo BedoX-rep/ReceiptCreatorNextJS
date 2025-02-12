@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { supabase } from "@/lib/supabase"
 
@@ -11,6 +11,28 @@ export default function ReceiptList() {
 
   useEffect(() => {
     fetchReceipts()
+
+    const channel = supabase
+      .channel('receipts_channel')
+      .on('postgres_changes',
+        { event: '*', schema: 'public', table: 'receipts' },
+        (payload) => {
+          if (payload.eventType === 'INSERT') {
+            setReceipts(prev => [payload.new, ...prev])
+          } else if (payload.eventType === 'DELETE') {
+            setReceipts(prev => prev.filter(receipt => receipt.id !== payload.old.id))
+          } else if (payload.eventType === 'UPDATE') {
+            setReceipts(prev => prev.map(receipt =>
+              receipt.id === payload.new.id ? payload.new : receipt
+            ))
+          }
+        }
+      )
+      .subscribe()
+
+    return () => {
+      supabase.removeChannel(channel)
+    }
   }, [])
 
   async function fetchReceipts() {
@@ -56,4 +78,3 @@ export default function ReceiptList() {
     </div>
   )
 }
-
